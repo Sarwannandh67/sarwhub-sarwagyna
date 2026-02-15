@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { TicketIcon } from './Icons';
+import { TicketIcon } from './Icons.tsx';
 
 const Demo: React.FC = () => {
   return (
@@ -64,7 +63,7 @@ const Demo: React.FC = () => {
 
                 <div className="space-y-4 mb-8">
                   <div className="group cursor-pointer">
-                    <div className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:border-white/30 transition-all">
+                    <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 transition-all">
                       <div>
                         <p className="text-xs font-bold text-white">Full Access</p>
                         <p className="text-[9px] text-white/40">Early Bird Rate</p>
@@ -73,7 +72,7 @@ const Demo: React.FC = () => {
                     </div>
                   </div>
                   <div className="group cursor-pointer">
-                    <div className="flex justify-between items-center p-4 bg-white/5 rounded-2xl border border-white/10 hover:border-white/30 transition-all">
+                    <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl border border-white/10 hover:border-white/30 transition-all">
                       <div>
                         <p className="text-xs font-bold text-white">Student Pass</p>
                         <p className="text-[9px] text-white/40">Requires Valid ID</p>
@@ -83,7 +82,7 @@ const Demo: React.FC = () => {
                   </div>
                 </div>
 
-                <button className="w-full py-4 bg-white text-black rounded-2xl font-black text-xs uppercase tracking-widest hover:scale-[1.02] transition-transform shadow-lg shadow-white/10">
+                <button className="w-full py-4 bg-white text-black rounded-xl font-black text-xs uppercase tracking-widest hover:scale-[1.02] transition-transform shadow-lg shadow-white/10">
                   Book Now
                 </button>
                 

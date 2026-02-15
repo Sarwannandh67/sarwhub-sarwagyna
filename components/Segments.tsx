@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Segment } from '../types';
+import { Segment } from '../types.ts';
 
 const Segments: React.FC = () => {
   const [activeTab, setActiveTab] = useState('nightlife');

@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { QuestionMarkCircleIcon, MailIcon } from './Icons';
+import { QuestionMarkCircleIcon, MailIcon } from './Icons.tsx';
 
 const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);

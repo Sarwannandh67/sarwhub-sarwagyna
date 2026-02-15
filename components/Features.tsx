@@ -1,11 +1,10 @@
-
 import React from 'react';
 import { 
   QRIcon, WalletIcon, ChartBarIcon, LayoutIcon, UsersIcon, 
   ShieldCheckIcon, TicketIcon, TagIcon, MonitorIcon, GlobeIcon, 
   CodeIcon, MailIcon, ClipboardListIcon, QuestionMarkCircleIcon, 
   TerminalIcon, AcademicCapIcon, CapacityIcon, ShareIcon, BriefcaseIcon 
-} from './Icons';
+} from './Icons.tsx';
 
 const Features: React.FC = () => {
   const features = [

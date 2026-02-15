@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { LayoutIcon, LightningIcon, BriefcaseIcon, AcademicCapIcon } from './Icons';
+import { LayoutIcon, LightningIcon, BriefcaseIcon, AcademicCapIcon } from './Icons.tsx';
 
 const WhySarwHub: React.FC = () => {
   const points = [

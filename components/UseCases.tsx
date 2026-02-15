@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { UsersIcon, GlobeIcon, BeakerIcon, TrophyIcon, AcademicCapIcon, ShareIcon } from './Icons';
+import { UsersIcon, GlobeIcon, BeakerIcon, TrophyIcon, AcademicCapIcon, ShareIcon } from './Icons.tsx';
 
 const UseCases: React.FC = () => {
   const cases = [
