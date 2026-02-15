@@ -28,7 +28,7 @@ const LegalView: React.FC<LegalViewProps> = ({ type }) => {
         },
         {
           heading: "Reporting Issues",
-          text: "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact the SarwHub team immediately at conduct@sarwhub.com. All reports will be handled with strict confidentiality."
+          text: "If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact the SarwHub team immediately at sarwhub@gmail.com. All reports will be handled with strict confidentiality."
         }
       ]
     },
@@ -89,7 +89,7 @@ const LegalView: React.FC<LegalViewProps> = ({ type }) => {
         },
         {
           heading: "Reporting Vulnerabilities",
-          text: "Please send your findings to security@sarwhub.com. Provide a detailed summary of the vulnerability, including steps to reproduce, potential impact, and your contact information."
+          text: "Please send your findings to sarwhub@gmail.com. Provide a detailed summary of the vulnerability, including steps to reproduce, potential impact, and your contact information."
         },
         {
           heading: "Our Commitment to You",
@@ -120,7 +120,7 @@ const LegalView: React.FC<LegalViewProps> = ({ type }) => {
         },
         {
           heading: "Dispute Resolution",
-          text: "For any disputes regarding payments or refunds, please contact our support team at billing@sarwhub.com with your transaction details. We aim to resolve all billing inquiries within 5 business days."
+          text: "For any disputes regarding payments or refunds, please contact our support team at sarwhub@gmail.com with your transaction details. We aim to resolve all billing inquiries within 5 business days."
         }
       ]
     }
@@ -162,7 +162,7 @@ const LegalView: React.FC<LegalViewProps> = ({ type }) => {
             Have questions about our {current.title.toLowerCase()}?
           </p>
           <a 
-            href="mailto:legal@sarwhub.com"
+            href="mailto:sarwhub@gmail.com"
             className="glass px-8 py-4 rounded-2xl font-medium border-white/10 hover:bg-white/5 transition-all inline-block"
           >
             Contact Legal Team
