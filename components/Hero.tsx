@@ -4,9 +4,15 @@ import { ShieldCheckIcon, LayoutIcon, WalletIcon, QRIcon, ChartBarIcon, TicketIc
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="relative pt-40 pb-24 px-6 overflow-hidden min-h-screen flex items-center">
-      {/* Background Effects */}
-      <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-white/5 blur-[120px] rounded-full -z-10 animate-pulse" />
-      <div className="absolute bottom-[10%] right-[-5%] w-[40%] h-[40%] bg-white/[0.03] blur-[100px] rounded-full -z-10" />
+      {/* Background Effects - GPU Accelerated */}
+      <div 
+        className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-white/5 blur-[120px] rounded-full -z-10 animate-pulse" 
+        style={{ transform: 'translateZ(0)', willChange: 'opacity' }}
+      />
+      <div 
+        className="absolute bottom-[10%] right-[-5%] w-[40%] h-[40%] bg-white/[0.03] blur-[100px] rounded-full -z-10" 
+        style={{ transform: 'translateZ(0)' }}
+      />
       
       <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Column: Messaging */}
@@ -31,16 +37,16 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <button 
               onClick={() => window.open('https://admin.sarwhub.com/signup', '_blank')}
-              className="bg-white text-black px-10 py-5 rounded-full text-base font-bold uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-white/10 w-full sm:w-auto"
+              className="bg-white text-black px-10 py-5 rounded-full text-base font-bold uppercase tracking-widest hover:scale-105 transition-all duration-300 shadow-xl shadow-white/10 w-full sm:w-auto active:scale-95"
             >
               Start Selling in Minutes
             </button>
             <button 
               onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-              className="glass px-10 py-5 rounded-full text-base font-bold uppercase tracking-widest hover:bg-white/10 transition-all border-white/10 flex items-center justify-center gap-2 group w-full sm:w-auto"
+              className="glass px-10 py-5 rounded-full text-base font-bold uppercase tracking-widest hover:bg-white/10 transition-all duration-300 border-white/10 flex items-center justify-center gap-2 group w-full sm:w-auto"
             >
               View Features
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
+              <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </button>
           </div>
 
@@ -74,7 +80,7 @@ const Hero: React.FC = () => {
         <div className="relative hidden lg:block animate-in fade-in slide-in-from-right-4 duration-1000 z-10">
           <div className="relative w-full aspect-square scale-110">
             {/* Dashboard Card */}
-            <div className="absolute top-[5%] right-0 w-[420px] glass p-1 rounded-[32px] rotate-2 shadow-2xl border-white/20 transform hover:rotate-0 transition-all duration-700 z-20 overflow-hidden">
+            <div className="absolute top-[5%] right-0 w-[420px] glass p-1 rounded-[32px] rotate-2 shadow-2xl border-white/20 transform hover:rotate-0 transition-transform duration-700 ease-out z-20 overflow-hidden">
                <div className="bg-neutral-900 rounded-[28px] overflow-hidden">
                   <div className="px-6 py-4 border-b border-white/5 flex justify-between items-center bg-black/40">
                     <span className="text-[10px] font-medium uppercase tracking-widest text-white/40">Revenue Analysis</span>
@@ -108,7 +114,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Checkout Modal Preview */}
-            <div className="absolute bottom-[5%] left-[5%] w-[340px] glass p-8 rounded-[40px] -rotate-3 shadow-2xl border-white/20 z-30 hover:rotate-0 transition-all duration-500">
+            <div className="absolute bottom-[5%] left-[5%] w-[340px] glass p-8 rounded-[40px] -rotate-3 shadow-2xl border-white/20 z-30 hover:rotate-0 transition-transform duration-500 ease-out">
               <div className="flex items-start justify-between mb-8">
                 <div>
                   <h4 className="font-normal text-xl tracking-tight">Full Access Pass</h4>
@@ -123,7 +129,7 @@ const Hero: React.FC = () => {
                   <span className="text-sm font-normal">1 x Standard</span>
                   <span className="text-sm font-medium">₹2,499</span>
                 </div>
-                <button className="w-full py-4 bg-white text-black rounded-xl font-medium text-sm hover:bg-white/90 transition-colors">
+                <button className="w-full py-4 bg-white text-black rounded-xl font-medium text-sm hover:bg-white/90 transition-colors active:scale-95">
                   Complete Booking
                 </button>
               </div>
@@ -136,8 +142,8 @@ const Hero: React.FC = () => {
 };
 
 const PillarCard: React.FC<{ icon: React.ReactNode, title: string, description: string }> = ({ icon, title, description }) => (
-  <div className="glass p-7 rounded-2xl border-white/5 hover:border-white/15 transition-all group cursor-default">
-    <div className="text-white/30 group-hover:text-white transition-colors mb-4 scale-110 origin-left">
+  <div className="glass p-7 rounded-2xl border-white/5 hover:border-white/15 transition-all duration-300 group cursor-default">
+    <div className="text-white/30 group-hover:text-white transition-colors duration-300 mb-4 scale-110 origin-left">
       {icon}
     </div>
     <h3 className="text-base font-medium mb-2 tracking-tight">{title}</h3>

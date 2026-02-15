@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons.tsx';
@@ -49,24 +48,30 @@ const Testimonials: React.FC = () => {
   const variants = {
     enter: (direction: number) => ({
       x: direction > 0 ? 100 : -100,
-      opacity: 0
+      opacity: 0,
+      transition: { duration: 0.4 }
     }),
     center: {
       zIndex: 1,
       x: 0,
-      opacity: 1
+      opacity: 1,
+      transition: { duration: 0.4 }
     },
     exit: (direction: number) => ({
       zIndex: 0,
       x: direction < 0 ? 100 : -100,
-      opacity: 0
+      opacity: 0,
+      transition: { duration: 0.4 }
     })
   };
 
   return (
     <section className="py-32 px-6 bg-black relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.02] blur-[120px] rounded-full pointer-events-none"></div>
+      {/* Background decoration - GPU Accelerated */}
+      <div 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.02] blur-[120px] rounded-full pointer-events-none"
+        style={{ transform: 'translateZ(0)' }}
+      ></div>
       
       <div className="max-w-4xl mx-auto relative">
         <div className="text-center mb-16">
@@ -85,10 +90,6 @@ const Testimonials: React.FC = () => {
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{
-                x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.4 }
-              }}
               className="absolute w-full"
             >
               <div className="glass p-10 md:p-16 rounded-[48px] border-white/10 text-center">
@@ -98,6 +99,8 @@ const Testimonials: React.FC = () => {
                     <img 
                       src={testimonials[currentIndex].image} 
                       alt={testimonials[currentIndex].author}
+                      loading="lazy"
+                      decoding="async"
                       className="w-20 h-20 rounded-full border-2 border-white/20 relative z-10 object-cover grayscale hover:grayscale-0 transition-all duration-500"
                     />
                   </div>
