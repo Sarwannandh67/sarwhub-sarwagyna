@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ setView }) => {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-16 mb-24">
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-8">
-              <img src="/favicon.svg" alt="SarwHub Logo" className="w-10 h-10 cursor-pointer" onClick={() => setView('home')} />
+              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center text-black font-medium text-2xl cursor-pointer" onClick={() => setView('home')}>S</div>
               <span className="font-medium text-2xl tracking-tighter cursor-pointer" onClick={() => setView('home')}>SarwHub</span>
             </div>
             <p className="text-white/30 max-w-xs text-sm leading-loose font-normal mb-8">
@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ setView }) => {
               <li><button onClick={() => setView('conduct')} className="hover:text-white transition-colors text-left w-full">Code of Conduct</button></li>
               <li><button onClick={() => setView('disclosure')} className="hover:text-white transition-colors text-left w-full">Responsible Disclosure</button></li>
               <li><button onClick={() => setView('refund')} className="hover:text-white transition-colors text-left w-full">Refund Policy</button></li>
-              <li><a href="mailto:sarwhub@gmail.com" className="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="mailto:support@sarwhub.com" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 

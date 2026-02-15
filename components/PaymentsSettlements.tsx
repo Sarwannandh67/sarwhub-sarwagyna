@@ -77,7 +77,7 @@ const PaymentsSettlements: React.FC<PaymentsSettlementsProps> = ({ setView }) =>
             For large scale festivals or recurring high-volume events, we can provide tailored settlement solutions to match your cashflow needs.
           </p>
           <a 
-            href="mailto:sarwhub@gmail.com?subject=Custom Payout Query"
+            href="mailto:billing@sarwhub.com?subject=Custom Payout Query"
             className="bg-white text-black px-12 py-5 rounded-2xl font-bold uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-2xl shadow-white/10"
           >
             Contact Billing Team

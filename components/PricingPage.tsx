@@ -375,7 +375,7 @@ const PricingPage: React.FC<PricingPageProps> = ({ setView }) => {
               </p>
             </div>
             <a 
-              href="mailto:sarwhub@gmail.com?subject=Pricing Consultation Request"
+              href="mailto:sales@sarwhub.com?subject=Pricing Consultation Request"
               className="inline-flex items-center gap-3 bg-white text-black px-10 py-5 rounded-2xl text-lg font-bold hover:scale-105 transition-all shadow-2xl shadow-white/20 whitespace-nowrap"
             >
               <MailIcon />

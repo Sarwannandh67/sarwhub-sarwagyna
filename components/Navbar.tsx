@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { SarwHubLogo } from './Icons.tsx';
 
 interface NavbarProps {
   currentView: 'home' | 'pricing' | 'about' | 'payments' | 'partner' | any;
@@ -65,7 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
       >
         <div className={`glass px-4 sm:px-8 py-3 sm:py-4 rounded-[28px] sm:rounded-full flex items-center justify-between transition-all duration-500 ${isScrolled || isMenuOpen ? 'bg-black/60 shadow-2xl backdrop-blur-xl border-white/20' : 'bg-transparent border-white/5'}`}>
           <button onClick={() => navigateToView('home')} className="flex items-center gap-2 sm:gap-3 group">
-            <img src="/favicon.svg" alt="SarwHub Logo" className="w-10 h-10 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(112,0,255,0.3)]" />
+            <SarwHubLogo className="w-10 h-10 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(112,0,255,0.3)]" />
             <span className="font-medium text-xl sm:text-2xl tracking-tighter hidden sm:block">SarwHub</span>
           </button>
           

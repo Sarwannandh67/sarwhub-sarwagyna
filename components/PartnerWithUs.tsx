@@ -68,7 +68,7 @@ const PartnerWithUs: React.FC<PartnerWithUsProps> = ({ setView }) => {
               </ul>
 
               <button 
-                onClick={() => window.location.href = `mailto:sarwhub@gmail.com?subject=Inquiry: ${type.title}`}
+                onClick={() => window.location.href = `mailto:partners@sarwhub.com?subject=Inquiry: ${type.title}`}
                 className="w-full py-4 glass border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all"
               >
                 Apply for {type.title}
@@ -110,7 +110,7 @@ const PartnerWithUs: React.FC<PartnerWithUsProps> = ({ setView }) => {
 
            <div className="glass p-12 md:p-16 rounded-[64px] border-white/10 bg-gradient-to-br from-white/[0.03] to-transparent relative overflow-hidden flex flex-col justify-center">
               <div className="absolute top-0 right-0 p-8">
-                <img src="/favicon.svg" alt="SarwHub Logo" className="w-10 h-10 cursor-pointer" onClick={() => setView('home')} />
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-black font-bold text-3xl">S</div>
               </div>
               <p className="text-2xl text-white/80 leading-relaxed italic mb-10">
                 "SarwHub's partner program allowed us to offer a completely branded experience to our VIP corporate clients while generating an additional 15% in passive revenue."
@@ -130,7 +130,7 @@ const PartnerWithUs: React.FC<PartnerWithUsProps> = ({ setView }) => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <a 
-              href="mailto:sarwhub@gmail.com"
+              href="mailto:partners@sarwhub.com"
               className="bg-white text-black px-12 py-5 rounded-2xl font-bold uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-2xl shadow-white/10"
             >
               Contact Partnership Team
